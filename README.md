@@ -47,6 +47,8 @@ The Streamlit app provides three main panels controlled via the sidebar:
 | **Run Model** | Upload one or more chest X-ray images and receive real-time predictions |
 | **Info** | Author links and project references |
 
+<img width="1856" height="952" alt="Image" src="https://github.com/user-attachments/assets/0428165f-77ab-45e1-8375-c156d711df94" />
+
 ---
 
 ## Model Architecture
@@ -148,34 +150,26 @@ Input: 200 × 200 × 1 (grayscale)
 
 > **Note:** The model achieves very high precision (99.47%), meaning nearly all positive predictions are correct. Recall of 92.78% indicates a small number of pneumonia cases are missed — an important consideration for clinical use.
 
-<div style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
+---
 
-  <!-- Image 1 -->
-  <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-    <img src="https://github.com/user-attachments/assets/ea993489-6777-431e-ad20-2182f860cb03" style="max-width: 80%; border-radius: 10px;" />
-    <p style="margin-top: 10px; font-size: 16px;">
-      <!-- Write your description here -->
-      Description for the first image goes here.
-    </p>
-  </div>
+<h3 align="center">Training Results</h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ea993489-6777-431e-ad20-2182f860cb03" width="80%" />
+</p>
+<p align="center">Accuracy & Loss over epochs</p>
 
-  <!-- Image 2 -->
-  <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-    <img src="https://github.com/user-attachments/assets/757e76d2-31d6-45d5-b58a-66b42bf35545" style="max-width: 80%; border-radius: 10px;" />
-    <p style="margin-top: 10px; font-size: 16px;">
-      Description for the second image goes here.
-    </p>
-  </div>
+<h3 align="center">Confusion Matrix</h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/757e76d2-31d6-45d5-b58a-66b42bf35545" width="80%" />
+</p>
+<p align="center">Evaluation results</p>
 
-  <!-- Image 3 -->
-  <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-    <img src="https://github.com/user-attachments/assets/41bdb561-a215-426e-87f1-32829190b567" style="max-width: 80%; border-radius: 10px;" />
-    <p style="margin-top: 10px; font-size: 16px;">
-      Description for the third image goes here.
-    </p>
-  </div>
+<h3 align="center">Prediction Example</h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/41bdb561-a215-426e-87f1-32829190b567" width="80%" />
+</p>
+<p align="center">Model prediction on sample X-ray</p>
 
-</div>
 
 
 ## Project Structure
