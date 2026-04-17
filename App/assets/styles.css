@@ -1,0 +1,21 @@
+.st-key-upload_box {
+    box-shadow: 2px 2px 10px white;
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+div[class*="st-key-prediction_container"] {
+    padding:30px;
+    margin : 10px;
+    background-image :linear-gradient(to left , rgba(126, 21, 21, 0.281) , rgba(167, 167, 26, 0.288));
+    border-radius : 10px;
+    border-color: white;
+    border-style: solid;
+}
+
+
+div[class*="st-key-prediction_container"] p {
+    text-align: center;
+    
+}
