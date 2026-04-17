@@ -148,7 +148,35 @@ Input: 200 × 200 × 1 (grayscale)
 
 > **Note:** The model achieves very high precision (99.47%), meaning nearly all positive predictions are correct. Recall of 92.78% indicates a small number of pneumonia cases are missed — an important consideration for clinical use.
 
----
+<div style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
+
+  <!-- Image 1 -->
+  <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+    <img src="https://github.com/user-attachments/assets/ea993489-6777-431e-ad20-2182f860cb03" style="max-width: 80%; border-radius: 10px;" />
+    <p style="margin-top: 10px; font-size: 16px;">
+      <!-- Write your description here -->
+      Description for the first image goes here.
+    </p>
+  </div>
+
+  <!-- Image 2 -->
+  <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+    <img src="https://github.com/user-attachments/assets/757e76d2-31d6-45d5-b58a-66b42bf35545" style="max-width: 80%; border-radius: 10px;" />
+    <p style="margin-top: 10px; font-size: 16px;">
+      Description for the second image goes here.
+    </p>
+  </div>
+
+  <!-- Image 3 -->
+  <div style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+    <img src="https://github.com/user-attachments/assets/41bdb561-a215-426e-87f1-32829190b567" style="max-width: 80%; border-radius: 10px;" />
+    <p style="margin-top: 10px; font-size: 16px;">
+      Description for the third image goes here.
+    </p>
+  </div>
+
+</div>
+
 
 ## Project Structure
 
