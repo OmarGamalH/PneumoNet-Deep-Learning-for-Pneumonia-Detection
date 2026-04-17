@@ -5,7 +5,7 @@ import numpy as np
 import os 
 from Utilities.Utilities import *
 from PIL import Image
-
+import pandas as pd
 # Settings and model upload
 st.set_page_config("Home")
 current_dir = os.path.dirname(__file__)
@@ -27,23 +27,30 @@ with st.sidebar:
     run_model = st.checkbox("Run Model" , value = True)
     show_info = st.checkbox("Show Info" , value = False)
 
+
+
 # Section : 1
 if show_model_details:
+    st.header("Model Details Section")
     st.write("deep learning-based medical image classification system that detects pneumonia from chest X-ray images.")
     st.divider()
-
+    st.header('Model Metrics and Evaluation')
+    metrics_df =  pd.read_csv(os.path.join(current_dir , "Metrics" , 'metrics.csv') , index_col = 'Unnamed: 0')
+    st.dataframe(metrics_df)
 
     image_1 = os.path.join(images_dir , "accuracy_loss.png")
     image_2 = os.path.join(images_dir , "predictions.png")
-    
+    image_3 = os.path.join(images_dir , 'Confusion_matrix.png')
     st.image(image_1)
     with st.container(key = "description_0"):
         st.write("Shows how error decreases over epochs" )
     st.image(image_2)
     with st.container(key = "description_1"):
         st.write("Shows accuracy improvement over epochs")
-
-
+    
+    st.image(image_3)
+    with st.container(key = "description_2"):
+        st.write("Show Confusion matrix")
 
 
 st.divider()
@@ -51,6 +58,7 @@ st.divider()
 
 # Section : 2
 if run_model:
+    st.header("Model Section")
     images_files = st.file_uploader("Image Upload" , type = ['jpg' , 'jpeg' , 'png'] , accept_multiple_files=True , key = "upload_box" )
     st.divider()
 
@@ -83,11 +91,12 @@ if run_model:
 
         st.divider()
 
-
+# Section 3
 if show_info:
-    st.header("Info")
+    st.header("Info Section")
     st.write("""
             Author : Omar Gamal Hamed
             """)
     st.link_button('Github Repo' , "https://github.com/OmarGamalH/PneumoNet-Deep-Learning-for-Pneumonia-Detection")
     st.link_button('linkedin' , 'https://www.linkedin.com/in/omar-gamal-hamed/')
+

@@ -70,7 +70,7 @@ class Model:
         self.transform = transforms.Compose([
             # PIL tranformations
             transforms.Grayscale(1),
-            transforms.Pad(50),
+            transforms.Pad(150),
             transforms.Resize(200),
             transforms.CenterCrop(200),
 
