@@ -1,4 +1,4 @@
-# 🫁 PneumoNet — Deep Learning for Pneumonia Detection
+# 🫁 PneumoNet : Deep Learning for Pneumonia Detection
 
 A deep learning-based medical image classification system that detects **pneumonia** from chest X-ray images, achieving **93% accuracy** on the test set. Built with PyTorch and deployed as an interactive web application using Streamlit.
 
